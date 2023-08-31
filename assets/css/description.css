@@ -1,0 +1,160 @@
+#description {
+    /* background-color: #77c850; */
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+#description img {
+    /* width: 200px; */
+    max-width: 100%;
+    max-height: 200px;
+    margin: 20px;
+}
+
+#description .info {
+    /* background-color: #77c850; */
+    filter: brightness(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 1rem; 
+    box-shadow: 0 0 8px 0px rgba(109, 109, 109, 0.534);
+}
+
+#description .info div .tipo-numero{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+#description .info div h2{
+    text-transform: capitalize;
+   margin: 10px 0;
+}
+.caracteristicas {
+    list-style: none;
+    padding: 0;
+}
+
+.espaco-texto-lista{
+    display: inline-block;
+    width :60px;
+}
+
+.caracteristicas li span{
+    /* background-color: red; */
+    display: inline-block;
+    width: 150px;
+    text-align: end;
+    
+}
+
+
+
+#hp{
+    width: 45px;
+}
+.stats{
+    width: 100%;
+    /* background-color: #77c850; */
+    filter: brightness(1.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 5px;
+    box-shadow: 0 0 8px 0px rgba(109, 109, 109, 0.534);
+}
+.stats ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.bar-stats{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    border-radius:  0 10px 10px 0;
+    background-color: white;
+
+    
+}
+
+
+
+
+
+
+.bar-stats{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:  0 3px 3px 0;
+    background-color: white;
+}
+
+#hp{
+  width:47px;
+}
+
+#atack {
+  width:89px;
+}
+
+#defense {
+   width:100px;
+}
+
+.stats-dados{
+   display:inline-block; 
+   width:130px; 
+}
+
+
+
+/* @media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    #description {
+         
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        justify-content: center;
+      
+        
+    }
+
+    #description .info {
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+    .stats{
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+}
